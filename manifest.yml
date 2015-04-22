@@ -3,4 +3,4 @@ applications:
 - name: larkin-test
   memory: 768M
   host: larkin-test
-  domain: larkin-test.cfapps.io
+  domain: larkin-test-893475839.cfapps.io
