@@ -2,10 +2,10 @@ package ie.cit.caf.larkin.cfdemo.controller;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import ie.cit.caf.larkin.cfdemo.entity.Artist;
 import ie.cit.caf.larkin.cfdemo.service.ArtistService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/artist")
 public class ArtistController {
 
-	@Autowired
+	@Inject
 	ArtistService artistService;
 	
 	@RequestMapping(method=RequestMethod.GET)
@@ -38,4 +38,5 @@ public class ArtistController {
 		
 		return "artist/index";
 	}
+	
 }
